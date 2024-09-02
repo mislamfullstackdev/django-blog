@@ -21,3 +21,4 @@ Thumbs.db
 *.class
 *.o
 *.so
+.env
