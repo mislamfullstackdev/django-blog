@@ -18,7 +18,9 @@ from . models import Post
 
 def home(request):
     context = {
-        'posts': Post.objects.all()
+        'posts': Post.objects.all(),
+        'today': date.today(),
+        'latest_posts': Post.objects.order_by('-date_posted')[:5]
     }
     return render(request, 'blog/home.html', context)
 

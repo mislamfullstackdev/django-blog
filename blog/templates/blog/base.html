@@ -56,20 +56,22 @@
             {% block content %}{% endblock %}
           </div>
           <div class="col-md-4">
-            <div class="content-section">
-              <h3>Our Sidebar</h3>
-              <p class='text-muted'>You can put any information here you'd like.
-                <ul class="list-group">
-                  <li class="list-group-item list-group-item-light">Latest Posts</li>
-                  <li class="list-group-item list-group-item-light">Announcements</li>
-                  <li class="list-group-item list-group-item-light">Calendars</li>
-                  <li class="list-group-item list-group-item-light">etc</li>
-                </ul>
-              </p>
-            </div>
+            {% include 'blog/sidebar.html' %}
           </div>
         </div>
     </main>
+    <footer class="bg-dark py-4">
+      <div class="container">
+          <nav class="nav justify-content-center">
+              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="#">About Us</a>
+              <a class="nav-link  text-white" href="#">Privacy policy</a>
+              <a class="nav-link text-white" href="#">Terms of Use</a>
+              <a class="nav-link text-white" href="#">Contact Us</a>
+          </nav>
+      </div>
+  </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
